@@ -1,9 +1,0 @@
-button {
-    background-color: white;
-    border-radius: 3px;
-    margin: 10px;
-}
-
-.button-pressed {
-    background-color: lightgrey;
-}
