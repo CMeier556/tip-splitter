@@ -12,7 +12,6 @@ function App() {
   const [pricePerPerson, setPricePerPerson] = useState(0)
   const [tipPerPerson, setTipPerPerson] = useState(0)
   
-
   const handleBill = (e) => {
     setBillData(e.target.value)
   }
