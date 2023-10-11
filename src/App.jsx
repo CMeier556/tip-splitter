@@ -34,15 +34,16 @@ function App() {
 
     return (
     <>
+      <h1>Tip Calculator</h1>
       <div className="billData">
-        <TextInputContainer text="Bill:" handleInput={handleBill} dataInputted={billData} />
+        <TextInputContainer text="Bill($):" handleInput={handleBill} dataInputted={billData} />
         <TextInputContainer text="Number of People:" handleInput={handlePeople} dataInputted={peopleData} />
         <TipPercentage setTipAmount={setTipAmount} />
       </div>
       <div className="billOutput">
         <br />
-        <TipPrice text="Price per person: £" result={pricePerPerson > 0 ? pricePerPerson : ''}  />
-        <TipPrice text="Tip amount per person: £" result={tipPerPerson > 0 ? tipPerPerson : ''} />
+        <TipPrice text="Price per person: $" result={pricePerPerson > 0 ? pricePerPerson : ''}  />
+        <TipPrice text="Tip amount per person: $" result={tipPerPerson > 0 ? tipPerPerson : ''} />
         <button onClick={resetPage}>Reset</button>
       </div>
     </>
